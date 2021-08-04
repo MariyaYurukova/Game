@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <th:block th:include="~{fragments/head}"></th:block>
+</head>
+<body>
+<div class="container-fluid">
+
+
+    <main>
+        <div class="jumbotron" >
+            <h1> WELCOME! </h1>
+            <div class="text-center">
+            <h3 >Games</h3>
+            </div>
+            <hr/>
+            <h3>***Minesweeper***Game***</h3>
+            <h3>3 levels</h3>
+        </div>
+        <div  th:replace="fragments/game-menu">
+        </div>
+
+    </main>
+
+</div>
+</body>
+</html>
